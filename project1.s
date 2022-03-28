@@ -36,3 +36,8 @@ inrange09:                      # This section checks if current char is in the 
 	sub $a0, $a0, $t0
 	add $s2, $s2, $a0
 	j ignore
+
+inrangeAV:
+	li $t0, 'A'
+	li $t1, 'V'
+	blt $a0, $t0, ignore
