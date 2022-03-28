@@ -12,4 +12,7 @@
 main:
 	li $v0, 4
 	la $a0, prompt
-    
+	syscall
+	
+	li $v0, 8
+	la $a0, input_buffer
