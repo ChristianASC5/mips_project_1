@@ -16,3 +16,8 @@ main:
 	
 	li $v0, 8
 	la $a0, input_buffer
+    li $a1, 11
+	syscall
+	
+	la $s0, input_buffer		#s0 = address of input
+	li $s1, 0			        #i(interator) for loop
