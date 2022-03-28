@@ -43,7 +43,7 @@ inrangeAV:                      # This section checks if current char is in the 
 	blt $a0, $t0, ignore
     bgt $a0, $t1, inrangeav
 	
-	subi $a0, $a0, 55
+	addi $a0, $a0, -55
 	add $s2, $s2, $a0
 	j ignore
 	
@@ -53,7 +53,7 @@ inrangeav:
 	blt $a0, $t0, ignore
     bgt $a0, $t1, ignore
 	
-	sub $a0, $a0, 87
+	addi $a0, $a0, -87
 	add $s2, $s2, $a0
 	j ignore
     
