@@ -26,3 +26,8 @@ main:
 loop:
 	lb $a0, 0($s0)
 	beq $s1, 10, exit
+	
+inrange09:
+	li $t0, '0'
+	li $t1, '9'
+	blt $a0, $t0, ignore
