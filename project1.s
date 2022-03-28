@@ -66,3 +66,7 @@ exit:
 	li $v0, 11
 	li $a0, 10
 	syscall
+    	
+	li $v0, 1
+	move $a0, $s2
+	syscall
