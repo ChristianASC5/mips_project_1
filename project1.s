@@ -60,4 +60,9 @@ inrangeav:
 ignore:
 	addi $s0, $s0, 1
 	addi $s1, $s1, 1
-	j loop 
+	j loop
+	
+exit:
+	li $v0, 11
+	li $a0, 10
+	syscall
