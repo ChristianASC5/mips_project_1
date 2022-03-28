@@ -56,3 +56,8 @@ inrangeav:
 	sub $a0, $a0, 87
 	add $s2, $s2, $a0
 	j ignore
+    
+ignore:
+	addi $s0, $s0, 1
+	addi $s1, $s1, 1
+	j loop 
