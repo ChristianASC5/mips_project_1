@@ -8,3 +8,8 @@
 	.data
 	input_buffer: .space 11
 	prompt:       .asciiz "Enter Input: "
+    .text
+main:
+	li $v0, 4
+	la $a0, prompt
+    
