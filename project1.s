@@ -21,3 +21,8 @@ main:
 	
 	la $s0, input_buffer		#s0 = address of input
 	li $s1, 0			        #i(interator) for loop
+    li $s2, 0			        #output sum
+	
+loop:
+	lb $a0, 0($s0)
+	beq $s1, 10, exit
