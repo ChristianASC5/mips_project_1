@@ -37,7 +37,12 @@ inrange09:                      # This section checks if current char is in the 
 	add $s2, $s2, $a0
 	j ignore
 
-inrangeAV:
+inrangeAV:                      # This section checks if current char is in the range A-V
 	li $t0, 'A'
 	li $t1, 'V'
 	blt $a0, $t0, ignore
+    bgt $a0, $t1, inrangeav
+	
+	subi $a0, $a0, 55
+	add $s2, $s2, $a0
+	j ignore
