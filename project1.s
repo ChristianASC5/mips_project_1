@@ -46,3 +46,8 @@ inrangeAV:                      # This section checks if current char is in the 
 	subi $a0, $a0, 55
 	add $s2, $s2, $a0
 	j ignore
+	
+inrangeav:
+	li $t0, 'a'
+	li $t1, 'v'
+	blt $a0, $t0, ignore
