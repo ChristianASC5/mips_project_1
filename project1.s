@@ -51,3 +51,8 @@ inrangeav:
 	li $t0, 'a'
 	li $t1, 'v'
 	blt $a0, $t0, ignore
+    bgt $a0, $t1, ignore
+	
+	sub $a0, $a0, 87
+	add $s2, $s2, $a0
+	j ignore
